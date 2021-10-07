@@ -1,0 +1,13 @@
+* {
+    color: white;
+}
+.row {
+    background-color: black;
+}
+
+.row.parent {
+    background-color: #e8b93d;
+}
+.row.nested {
+    background-color: blueviolet;
+}

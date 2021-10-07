@@ -1,0 +1,20 @@
+.row {
+    min-height: 200px;
+    color: white;
+}
+
+.align-items-start {
+    background-color: darkred;
+}
+
+.align-items-center {
+    background-color: coral;
+}
+
+.align-items-end {
+    background-color: green;
+}
+
+.col {
+    background-color: blueviolet;
+}

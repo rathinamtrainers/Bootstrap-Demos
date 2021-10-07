@@ -1,0 +1,72 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url("../images/prague-czech-republic.jpg");
+    background-color: #2b542c;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100% 100%;
+    min-height: 100%;
+    display: table;
+    width: 100%;
+    height: 100%;
+    color: white;
+    z-index: 2;
+    position: relative;
+}
+
+#cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+#navigation-bar-container {
+    margin: 10px auto;
+    border-radius: 10px
+}
+
+@media (min-width: 768px) {
+    #navigation-bar-container {
+        width: 50%;
+    }
+}
+
+#navigation-bar-container a.navbar-brand,
+#navbar ul a
+{
+    font-weight: 900;
+}
+
+#navigation-bar-container a.navbar-brand {
+    font-size: 2rem;
+}
+
+#navbar ul a {
+    font-size: 1.5rem;
+}
+
+/* Reference for table/table-cell veritical alignment:
+https://www.vanseodesign.com/blog/demo/vertical-centering/table-cell.php */
+#center-content {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#footer-content {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+
+}

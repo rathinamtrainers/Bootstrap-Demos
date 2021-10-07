@@ -1,0 +1,13 @@
+.row {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.row-1 .col {
+    background-color: green;
+}
+
+.row-2 .col {
+    background-color: blueviolet;
+}
