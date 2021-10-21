@@ -1,0 +1,58 @@
+html {
+    height: 100%;
+}
+
+body {
+    padding-top: 60px;
+    height: 100%;
+}
+
+/* # denotes element "id" attribute. Here it applies to <div id="main-container"> in HTML file*/
+#main-container,
+#main-container > .row
+{
+    height: 100%;
+}
+
+/* A new CSS class starts with dot (.) */
+.sidebar {
+    padding: 10px 0;
+    background-color: #f5f5f5;
+    border-right: 1px solid #cbc5c5;
+}
+
+.sidebar ul {
+    margin-bottom: 30px;
+}
+
+.sidebar ul li {
+    padding-left: 10px;
+    min-height: 2rem;
+}
+
+/* Remove default HyperLink decoration. Will new decoration for vertical menu using .sidebar class */
+.sidebar ul li a {
+    text-decoration: none;
+}
+
+/* Adding new decoration for sidebar menu. Provide dark background with white foreground color for active and
+   hover items.*/
+.sidebar ul li.active,
+.sidebar ul li.active a,
+.sidebar ul li:hover,
+.sidebar ul li:hover a,
+.sidebar ul li a:hover
+{
+    background-color: #428BCA;
+    color: White;
+}
+
+/* Keep the mouse pointer same on anchor tag <a> and on the list item <li> */
+.sidebar ul li:hover {
+    cursor: pointer;
+}
+
+/* Set color and size for horizonal line tag <hr> */
+hr {
+    border-top: 4px solid #484646;
+}
