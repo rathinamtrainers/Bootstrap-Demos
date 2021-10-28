@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="stylesheets/130-FormsDemo1.css" type="text/css">
+
+    <title>Forms Demonstration</title>
+</head>
+<body>
+    <div id="main-container" class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <h3>Sign In</h3>
+                <p>Sign in today for better experience.</p>
+
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter email id" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter Password" class="form-control">
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="remember-me-checkbox">
+                            <label for="remember-me-checkbox" class="form-check-label">Remember Me</label>
+                        </div>
+
+                        <button class="btn btn-sm btn-primary" type="submit">
+                            <strong>Log in</strong>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <h3>Sign In</h3>
+                <p>Sign in today for better experience.</p>
+
+                <form>
+                    <div class="form-group row">
+                        <label class="col-lg-2 col-form-label" for="email2" >Email</label>
+                        <div class="col-lg-10">
+                            <input type="email" id="email2" placeholder="Enter email id" class="form-control">
+                            <small class="form-text text-muted">Example block level help text</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="password2" class="col-lg-2 col-form-label">Password</label>
+                        <div class="col-lg-10">
+                            <input type="password" id="password2" placeholder="Enter Password" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row justify-content-end">
+                        <div class="col-lg-10">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="remember-me-checkbox2">
+                                <label for="remember-me-checkbox2" class="form-check-label">Remember Me</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row justify-content-end">
+                        <div class="col-lg-10">
+                            <button class="btn btn-sm btn-secondary" type="submit">
+                                <strong>Sign In</strong>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="inline-form-container" class="container">
+        <hr>
+        <div class="row">
+            <div class="col-12">
+                <form class="form-inline">
+                    <div class="form-group mr-sm-2">
+                        <label for="email3">Email address</label>
+                        <input type="email" placeholder="Enter email" id="email3" class="form-control">
+                    </div>
+
+                    <div class="form-group mr-sm-2">
+                        <label for="password3">Password</label>
+                        <input type="password" placeholder="Enter Password" id="password3" class="form-control">
+                    </div>
+
+                    <div class="form-check mr-sm-3">
+                        <input type="checkbox" id="checkbox1" class="form-check-input">
+                        <label for="checkbox1" class="form-check-label">Remember Me</label>
+                    </div>
+
+                    <button class="btn btn-primary" type="submit">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <hr>
+        <form>
+            <div>
+                <em>Help Text</em>
+                <hr>
+            </div>
+            <div class="form-group row">
+                <label for="help-text" class="col-lg-2 col-form-label">GST Number</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="help-text" placeholder="Key in your GST number">
+                    <small class="form-text text-muted">Give your company GST number. Enter State code + PAN + area code </small>
+                </div>
+            </div>
+        </form>
+
+        <div>
+            <em>Readonly Plain Text</em>
+            <hr>
+        </div>
+
+        <div class="form-group row">
+            <label for="readonly-email" class="col-sm-2 col-form-label">Email:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" readonly id="readonly-email"
+                       value="rajan@rathinamtrainers.com">
+            </div>
+        </div>
+
+        <div>
+            <em>Select Boxes</em>
+            <hr>
+        </div>
+
+        <div class="form-group row">
+            <label for="select-1" class="col-lg-2 col-form-label">Single</label>
+            <div class="col-sm-10">
+                <select class="form-control" id="select-1" name="account">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group row justify-content-end">
+            <label for="select-2" class="col-lg-2 col-form-label">Multiple</label>
+            <div class="col-sm-10">
+                <select class="form-control" id="select-2" multiple="multiple">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <em>Input Validation</em>
+            <hr>
+        </div>
+
+        <div class="form-group row">
+            <label for="valid-input" class="col-lg-2 col-form-label">Email:</label>
+            <div class="col-lg-10">
+                <input type="email" class="form-control is-valid" id="valid-input"
+                       placeholder="Your email id"
+                       required>
+                <div class="valid-feedback">
+                    Good Job!
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="invalid-input" class="col-lg-2 col-form-label">Password </label>
+            <div class="col-lg-10">
+                <input type="password" class="form-control is-invalid" id="invalid-input"
+                       placeholder="Your password"
+                       required>
+                <div class="invalid-feedback">
+                    Please enter your password
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <em>Size of Input Controls</em>
+            <hr>
+        </div>
+
+        <div class="form-group row">
+            <label for="large-size-input" class="col-lg-2 col-form-label">Large</label>
+            <div class="col-lg-10">
+                <input type="text" class="form-control form-control-lg" id="large-size-input">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="normal-size-input" class="col-lg-2 col-form-label">Normal (Default)</label>
+            <div class="col-lg-10">
+                <input type="text" class="form-control" id="normal-size-input">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="small-size-input" class="col-lg-2 col-form-label">Small</label>
+            <div class="col-lg-10">
+                <input type="text" class="form-control form-control-sm" id="small-size-input">
+            </div>
+        </div>
+
+        <div>
+            <em>Input Groups</em>
+            <hr>
+        </div>
+
+        <div class="row justify-content-end" id="input-groups-container">
+            <div class="col-lg-10">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">@</span>
+                    </div>
+                    <input type="text" placeholder="Username" class="form-control">
+                </div>
+
+                <div class="input-group">
+                    <input type="text" class="form-control">
+                    <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Rs.</span>
+                    </div>
+                    <input type="text" class="form-control">
+                    <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <input type="radio">
+                        </span>
+                    </div>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <em>Input & Button Groups</em>
+            <hr>
+        </div>
+
+        <div class="row justify-content-end">
+            <div class="col-lg-10">
+                <div class="input-group">
+                    <input type="text" class="form-control">
+                    <div clas="input-group-append">
+                        <button type="button" class="btn btn-primary">GO!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
